@@ -1,4 +1,6 @@
-var angka = [1, 2, 3];
-var total = angka.length ** angka.length;
-let check = console.log(angka.length);
-console.log(total);
+var obj = {
+name : "james",
+"is able": true,
+1 : 100
+}
+console.log(obj.1)
