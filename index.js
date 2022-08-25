@@ -1,6 +1,4 @@
 var angka = [1, 2, 3];
-
-let check = angka.length;
-let total = check ** check;
-console.log(check ** check);
+var total = angka.length ** angka.length;
+let check = console.log(angka.length);
 console.log(total);
