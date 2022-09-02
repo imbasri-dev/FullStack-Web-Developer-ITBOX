@@ -1,12 +1,17 @@
 [
-  {
-    "id": 1,
-    "name": "Andi",
-    "score": 95
-  },
-  {
-    "id": 2,
-    "name": "Charlie",
-    "score": 85
-  }
+   {
+      "id": 1,
+      "task": "Belajar MVC",
+      "status": true
+   },
+   {
+      "id": 2,
+      "task": "Explore OOP",
+      "status": false
+   },
+   {
+      "id": 3,
+      "task": "Kerjakan Tugas",
+      "status": false
+   }
 ]

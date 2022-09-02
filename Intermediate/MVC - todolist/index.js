@@ -8,9 +8,7 @@ const TodoController = require("./controller/TodoController");
 switch (command) {
     case "show":
         // console.log("Command show");
-
         TodoController.show();
-
         break;
     case "add":
         // console.log("Command add");
