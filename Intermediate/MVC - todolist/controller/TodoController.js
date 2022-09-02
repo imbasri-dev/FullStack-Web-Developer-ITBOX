@@ -13,7 +13,9 @@ class TodoController {
     static delete(todo) {
         Todo.delete(todo);
     }
-    static update(todo) {}
+    static update(todo) {
+        Todo.update(todo);
+    }
     static message(msg) {
         TodoView.message(msg);
     }

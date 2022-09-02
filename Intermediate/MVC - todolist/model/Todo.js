@@ -42,6 +42,22 @@ class Todo {
         // console.log(todos);
         this.save(todos);
     }
+
+    static update(todo) {
+        let todos = this.getTodos();
+        let id = Number(todo[0]);
+        let task = todo[1];
+        let status = Boolean(todo[2]);
+        todos = todos.map((todo) => {
+            if (todo.id === id) {
+                todo.task = task;
+                todo.status = status;
+            }
+            return todo;
+        });
+        // console.log(todos);
+        this.save(todos);
+    }
     static save(data) {
         fs.writeFileSync("./data.json", JSON.stringify(data, null, 3));
     }

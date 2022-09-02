@@ -1,0 +1,20 @@
+Latihan membuat TodoList dengan Node Terminal yang dimana data disimpan di data.JSON
+
++belajar metode MVC
+**model" jembatan penghubung data ke database (CRUD).
+**controller: mengatur antara view/user dan ke model.
+**view :tampilan/input dari user/client.
+
+
+untuk mencoba nya dengan cara command diterminal
+node index.js "command disini"
+
+// console commandnya :
+--tambah data
+node index add "nama task" //enter
+--delete data
+node index delete id(number) //enter
+--update data
+node index update id(number) "nama task" boolean(task done / undone = true/false) //enter
+--show data / tampil data
+node index show
