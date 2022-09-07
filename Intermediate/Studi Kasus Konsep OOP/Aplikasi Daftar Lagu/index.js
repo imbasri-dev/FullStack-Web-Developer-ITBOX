@@ -1,15 +1,19 @@
 const command = process.argv[2]; // mengambil input dari terminal
 const params = process.argv.slice(3); //memotong array dari hasil input
+const PlaylistController = require("./controllers/PlaylistController");
 
 switch (command) {
     case "add":
-        console.log("command add");
+        PlaylistController.add();
         break;
     case "remove":
-        console.log("command remove");
+        PlaylistController.remove();
         break;
     case "make":
-        console.log("command make");
+        PlaylistController.make();
+        break;
+    case "showPlaylist":
+        PlaylistController.show();
         break;
     default:
         console.log("masukkan command yang benar, terima kasih!");
