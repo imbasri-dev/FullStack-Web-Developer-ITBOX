@@ -1,4 +1,5 @@
 const Farm = require("./Farm");
-console.log(Farm);
 
-Farm.readCSV();
+// Farm.readCSV();
+// Farm.total();
+Farm.addPoultry("turkey", 15000);
