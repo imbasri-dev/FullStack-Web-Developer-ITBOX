@@ -14,6 +14,18 @@
                 "name": "Songs Rock",
                 "duration": 120,
                 "genre": "Rock"
+            },
+            {
+                "id": 3,
+                "name": "Pop songs",
+                "duration": 100,
+                "genre": "Pop"
+            },
+            {
+                "id": 4,
+                "name": "Pop Indie",
+                "duration": 125,
+                "genre": "Pop"
             }
         ]
     }
