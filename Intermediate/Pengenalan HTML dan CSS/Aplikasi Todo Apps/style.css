@@ -18,12 +18,17 @@ body {
 }
 .header h1 {
     color: chocolate;
+    margin-bottom: 5px;
 }
 .body_todo {
     width: 50%;
     margin: auto;
 }
 .input_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 .input_body input {
@@ -33,9 +38,11 @@ body {
 .input_body button {
     width: 50%;
     padding: 8px 16px;
+    margin: 8px auto;
 }
 .table_body {
     width: 100%;
+    margin-bottom: 20px;
 }
 table {
     width: 100%;

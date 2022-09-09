@@ -4,6 +4,7 @@
         <title>Todo Apps</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- css external -->
         <link href="./style.css" rel="stylesheet" />
     </head>
     <body>
@@ -18,8 +19,9 @@
                         type="text"
                         name="name"
                         placeholder="Masukkan Task"
+                        id="task_form"
                     />
-                    <button>+ Add Task</button>
+                    <button id="btn_click">+ Add Task</button>
                 </div>
                 <div class="table_body">
                     <table border="1" cellspacing="0">
@@ -29,17 +31,15 @@
                             <th>Task</th>
                             <th>Status</th>
                         </tr>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Belajar DOM</td>
-                                <td>true</td>
-                            </tr>
+                        <tbody id="tBody">
+
                         </tbody>
                         </thead>
                     </table>
                 </div>
             </div>
         </div>
+
+        <script src="./script.js"></script>
     </body>
 </html>
