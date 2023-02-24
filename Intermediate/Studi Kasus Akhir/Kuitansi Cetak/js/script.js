@@ -18,8 +18,33 @@ function submitHandler() {
       harga: +hargaValue,
       //   tanda + diharga agar menjadi sebuah number
    };
+   document.getElementById("namaCart").innerHTML = namaValue;
    carts.push(tempObj);
    console.log(carts);
+   getCarts();
+}
+
+function getCarts() {
+   let tBody = document.getElementById("tBody");
+   //    reset
+   tBody.innerHTML = "";
+   carts.forEach((cart) => {
+      tBody.innerHTML += `<tr>
+    <td>${cart.id}</td>
+    <td>${cart.nama}</td>
+    <td>Rp.${cart.harga}</td>
+    </tr>`;
+   });
 }
 
 BtnSubmit.addEventListener("click", submitHandler);
+
+let BtnPrint = document.getElementById("btnPrint");
+function printHandler() {
+   document.querySelector(".form-box").style.display = "none";
+   BtnPrint.style.display = "none";
+
+   window.print();
+}
+
+BtnPrint.addEventListener("click", printHandler);
