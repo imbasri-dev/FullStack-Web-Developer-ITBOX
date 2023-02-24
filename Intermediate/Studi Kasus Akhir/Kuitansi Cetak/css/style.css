@@ -57,3 +57,7 @@ body {
     border: none;
     margin-top: 5px;
 }
+
+#btnSubmit:hover {
+    background-color: darkgrey;
+}
